@@ -1,0 +1,413 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+:root {
+    --indigo: #6c63ff;
+    --darkIndigo: #3e3994;
+    --gray: #7c7b7b;
+}
+/* utility */
+.container {
+    padding: 0 10%;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+section {
+    padding: 20px 0;
+}
+body {
+    box-sizing: border-box;
+}
+/***** Navbar *****/
+.navbar {
+    padding: 0 10%;
+}
+.navbar ul {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    font-weight: 600;
+}
+.navbar li {
+    list-style: none;
+    padding: 1rem;
+}
+.navbar a {
+    text-decoration: none;
+}
+.navbar-logo {
+    flex: 1;
+    user-select: none;
+}
+.navbar-link {
+    font-size: 15px;
+}
+.navbar-link:hover {
+    color: var(--darkIndigo);
+}
+.navbar-toggle {
+    display: none;
+}
+
+button {
+    border: none;
+    background: none;
+}
+button .btn-indigo {
+    background-color: var(--indigo);
+    border-radius: 3px;
+    padding: 10px 18px;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+button .btn-indigo:hover {
+    background-color: var(--darkIndigo);
+}
+button .btn-outline {
+    border: 2px solid var(--gray);
+    padding: 10px 18px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+}
+button .btn-outline:hover {
+    background-color: var(--indigo);
+    color: #fff;
+}
+nav .btn-indigo {
+    margin-left: 14px;
+}
+nav .btn-outline {
+    margin-left: 32px;
+}
+/***** End:Navbar *****/
+
+/***** hero section *****/
+.hero {
+    display: flex;
+    min-height: 470px;
+}
+.hero .heading-hero {
+    width: 50%;
+    align-self: center;
+}
+.hero .img-hero {
+    width: 50%;
+    align-self: center;
+    text-align: center;
+}
+.hero img {
+    height: 364px;
+}
+.heading-hero h1 {
+    font-size: 44px;
+    font-weight: 600;
+    width: 423px;
+    margin-bottom: 28px;
+}
+.heading-hero p {
+    font-size: 23px;
+    line-height: 24px;
+    width: 381px;
+    margin-top: 28px;
+    color: #505050;
+}
+.line {
+    border: 2px solid;
+    width: 80px;
+    color: var(--gray);
+}
+.heading-hero button {
+    margin-top: 40px;
+}
+.hero .btn-outline {
+    margin-left: 20px;
+}
+/***** end:hero *****/
+
+/***** About *****/
+.about {
+    height: 580px;
+}
+.about-title {
+    text-align: center;
+    padding: 30px 0;
+}
+h2 {
+    font-size: 44px;
+    margin-bottom: 15px;
+}
+.about-title p {
+    text-align: center;
+    font-size: 23px;
+    width: 587px;
+    margin: 15px auto 0 auto;
+    color: var(--gray);
+    font-weight: 600;
+}
+.about-title .line {
+    margin: 0 auto;
+}
+.card-about {
+    margin: 40px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.card-about .card {
+    height: 100%;
+    padding: 20px 0;
+}
+.card-about .card-img {
+    text-align: center;
+}
+.card-about .card-content {
+    text-align: center;
+    margin-top: 20px;
+}
+.card-content h3 {
+    font-size: 27px;
+    font-weight: 600;
+}
+.card-content p {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 10px auto 0 auto;
+    width: 337px;
+    color: var(--gray);
+}
+/****** end:About ******/
+
+/****** Content ******/
+.content {
+    display: flex;
+    height: 470px;
+    padding: 100px 0;
+}
+.content-img {
+    width: 50%;
+}
+.content-img img {
+    width: 500px;
+    text-align: center;
+}
+.content-title {
+    width: 50%;
+    align-self: center;
+    justify-content: flex-end;
+    padding-left: 150px;
+}
+.content-title h3 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    width: 423px;
+}
+.content-title p {
+    font-size: 20px;
+    margin-top: 30px;
+    width: 399px;
+    margin-bottom: 15px;
+}
+.content-title a {
+    color: var(--indigo);
+    font-size: 22px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.content-title a:hover {
+    color: var(--darkIndigo);
+}
+/****** End:Content ******/
+
+/****** Service ******/
+.service-title {
+    text-align: center;
+}
+.service-title .line {
+    margin: 0 auto;
+}
+.service-title p {
+    font-size: 23px;
+    width: 587px;
+    margin: 15px auto 0 auto;
+    color: var(--gray);
+    font-weight: 600;
+}
+.service-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100px 20px;
+    width: 850px;
+    margin: 10px auto;
+    padding: 100px;
+}
+.card-service {
+    display: flex;
+    width: 100px;
+}
+.card-service img {
+    width: 70px;
+    height: 80px;
+}
+.card-service .card-content {
+    margin-left: 15px;
+}
+.card-service .card-content h3 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+.card-service .card-content p {
+    font-size: 18px;
+}
+/****** End:Service ******/
+
+/****** Footer ******/
+.footer-img {
+    text-align: center;
+    padding: 30px 0;
+    width: 600px;
+    margin: 0 auto;
+}
+.footer-img p {
+    font-size: 18px;
+    color: var(--gray);
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+/****** End:Footer ******/
+
+/***** Mobile Version *****/
+@media only screen and (max-width: 500px) {
+    .navbar {
+        padding: 0;
+    }
+    .navbar ul {
+        flex-wrap: wrap;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    nav button {
+        display: none;
+    }
+    .navbar-link {
+        display: none;
+        width: 100%;
+        text-align: center;
+    }
+    .active {
+        display: block;
+    }
+    .container .hero {
+        flex-wrap: wrap;
+    }
+    .hero .heading-hero {
+        width: 100%;
+    }
+    .hero .heading-hero h1 {
+        font-size: 30px;
+        width: 100%;
+    }
+    .hero .heading-hero p {
+        font-size: 18px;
+        width: 100%;
+    }
+    .hero .img-hero {
+        width: 100%;
+    }
+    .hero .img-hero img {
+        width: 100%;
+    }
+    .card-about {
+        grid-template-columns: 1fr;
+    }
+    .about {
+        flex-wrap: wrap;
+        height: 100%;
+    }
+    .about-title {
+        width: 100%;
+    }
+    .about-title h2 {
+        font-size: 30px;
+    }
+    .about-title p {
+        font-size: 18px;
+        width: 100%;
+    }
+    .card-about h3 {
+        font-size: 30px;
+    }
+    .card-about p {
+        font-size: 18px;
+    }
+    .container .content {
+        flex-wrap: wrap;
+    }
+    .content .content-img {
+        width: 100%;
+    }
+    .content-img img {
+        width: 100%;
+    }
+    .content-title {
+        width: 100%;
+        padding-left: 0;
+        margin-top: 25px;
+    }
+    .content-title h3 {
+        width: 100%;
+        font-size: 30px;
+    }
+    .content-title p {
+        font-size: 18px;
+        width: 100%;
+    }
+    .service {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .service-title h2 {
+        font-size: 30px;
+    }
+    .service-title p {
+        font-size: 18px;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .service-card {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .service-card {
+        grid-template-columns: 1fr;
+        padding: 0;
+        gap: 50px;
+    }
+    .card-service {
+        width: 100%;
+    }
+    .card-service .card-content h3 {
+        font-size: 25px;
+        width: 100%;
+    }
+    .card-content p {
+        font-size: 15px;
+        width: 100%;
+    }
+    footer {
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+    .footer-img {
+        width: 100%;
+    }
+    .footer-img p {
+        font-size: 15px;
+    }
+}
